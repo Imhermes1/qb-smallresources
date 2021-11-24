@@ -3,12 +3,11 @@ Config.MaxWidth = 5.0
 Config.MaxHeight = 5.0
 Config.MaxLength = 5.0
 Config.DamageNeeded = 100.0
-Config.EnableProne = true
+Config.EnableProne = false
 Config.JointEffectTime = 60
 Config.RemoveWeaponDrops = true
 Config.RemoveWeaponDropsTimer = 25
-Config.DefaultPrice = 20 -- carwash
-Config.DirtLevel = 0.1 --carwash dirt level
+Config.DefaultPrice = 50 -- carwash
 
 ConsumeablesEat = {
     ["sandwich"] = math.random(35, 54),
@@ -58,7 +57,7 @@ Config.BlacklistedVehs = {
     [`MAVERICK`] = true,
     [`BLIMP`] = true,
     [`AIRTUG`] = true,
-    [`CAMPER`] = true,
+    [`CAMPER`] = true,    
 }
 
 Config.BlacklistedPeds = {
@@ -89,7 +88,7 @@ Config.Teleports = {
     [2] = {
         [1] = {
             coords = vector4(909.49, -1589.22, 30.51, 92.24),
-            ["AllowVehicle"] = false,
+            ["AllowVehicle"] = false, 
             drawText = '[E] Enter Coke Processing'
         },
         [2] = {
@@ -97,28 +96,89 @@ Config.Teleports = {
             ["AllowVehicle"] = false,
             drawText = '[E] Leave'
         },
+    },   
+    ----Real Estate Building
+    [3] = {
+        [1] = {
+            coords = vector4(-117.05, -606.04, 36.28, 70.13),
+            ["AllowVehicle"] = false, 
+            drawText = '[E] Enter Real Esate Office'
+        },
+        [2] = {
+            coords = vector4(-141.12, -620.84, 168.82, 94.14),
+            ["AllowVehicle"] = false,
+            drawText = '[E] Leave'
+        },
     },
+    ----Chill Place to hang out
+    [4] = {
+        [1] = {
+            coords = vector4(-182.36, -594.21, 48.22, 193.64),
+            ["AllowVehicle"] = false, 
+            drawText = '[E] Enter Hang Out'
+        },
+        [2] = {
+            coords = vector4(-198.19, -580.69, 136.0, 276.17),
+            ["AllowVehicle"] = false,
+            drawText = '[E] Leave'
+        },
+    },
+   ----A Place to take your Car for photos??
+   [5] = {
+    [1] = {
+        coords = vector4(-144.07, -576.5, 32.42, 158.25),
+        ["AllowVehicle"] = true, 
+        drawText = '[E] Enter'
+    },
+    [2] = {
+        coords = vector4(-141.4, -590.68, 167.0, 117.95),
+        ["AllowVehicle"] = true,
+        drawText = '[E] Leave'
+    },
+},
+
 }
 
-Config.CarWash = { -- carwash
+Config.Locations = { -- carwash
     [1] = {
         ["label"] = "Hands Free Carwash",
-        ["coords"] = vector3(25.29, -1391.96, 29.33),
+        ["coords"] = vector3(26.5906, -1392.0261, 27.3634),
     },
     [2] = {
         ["label"] = "Hands Free Carwash",
-        ["coords"] = vector3(174.18, -1736.66, 29.35),
+        ["coords"] = vector3(167.1034, -1719.4704, 27.2916),
     },
     [3] = {
         ["label"] = "Hands Free Carwash",
-        ["coords"] = vector3(-74.56, 6427.87, 31.44),
+        ["coords"] = vector3(-74.5693, 6427.8715, 29.4400),
+    },
+    [4] = {
+        ["label"] = "Hands Free Carwash",
+        ["coords"] = vector3(-1200.4, -1720.46, 3.40),
     },
     [5] = {
         ["label"] = "Hands Free Carwash",
-        ["coords"] = vector3(1363.22, 3592.7, 34.92),
+        ["coords"] = vector3(1363.22, 3592.7, 34.41),
     },
     [6] = {
         ["label"] = "Hands Free Carwash",
-        ["coords"] = vector3(-699.62, -932.7, 19.01),
+        ["coords"] = vector3(-699.6325, -932.7043, 17.0139),
     }
 }
+Consumeables = {
+
+    --Food 
+    
+    ["burger-bleeder"] = math.random(35, 54),
+    ["burger-moneyshot"] = math.random(35, 54),
+    ["burger-torpedo"] = math.random(35, 54),
+    ["burger-heartstopper"] = math.random(35, 54),
+    ["burger-meatfree"] = math.random(35, 54),
+    ["burger-fries"] = math.random(35, 54),
+    
+    
+    --Drinks
+    ["burger-softdrink"] = math.random(40, 50),
+    ["burger-mshake"] = math.random(40, 50),
+    
+    } 
